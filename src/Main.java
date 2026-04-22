@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
+    /// Créer la caisse et ajouter les produits///
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Caisse caisse = new Caisse();
@@ -19,7 +20,7 @@ public class Main {
         caisse.ajouterproduits(new Boisson("Acqua naturale", 1, "froid", "100cl"));
         caisse.ajouterproduits(new Boisson("Birra alla spina", 4, "froid", "50cl"));
         caisse.ajouterproduits(new Boisson("Moretti", 3, "froid", "33cl"));
-
+/// choix///
         boolean continuer = true;
         int choix = 0;
         while (continuer) {
@@ -45,7 +46,7 @@ public class Main {
         System.out.println("Au revoir !");
         System.out.println("BONNE JOURNEE");
     }
-
+/// afficher_detail_produit//
     static void afficherDetailProduit(Scanner scanner, Caisse caisse) {
         System.out.println("\n--- Liste des produits ---");
         caisse.afficherListeProduits();
@@ -58,7 +59,7 @@ public class Main {
             System.out.println("Numéro invalide.");
         }
     }
-
+/// paiement ///
     static void payerTable(Scanner scanner, Caisse caisse) {
         System.out.print("Numéro de la table : ");
         int table = scanner.nextInt();
@@ -88,7 +89,7 @@ public class Main {
         Commende commande = caisse.payerTable(table, nbPers, noms);
         System.out.println("Total : " + commande.calculerTotal() + " €");
     }
-
+/// caisse_secours ///
     static void caisseSecours(Scanner scanner, Caisse caisse) {
         System.out.print("Numéro de la table : ");
         int table = scanner.nextInt();
