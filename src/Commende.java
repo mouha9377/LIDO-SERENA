@@ -12,19 +12,19 @@ public class Commende {
         this.nbPersonnes = nbPersonnes;
         this.produits = new ArrayList<>(); // ← IMPORTANT
     }
-/// ajouter_produit//
+/// ajouter_produit///
     public void ajouterProduit(Produit p) {
         produits.add(p);
     }
 /// calcule///
     public double calculerTotal() {
         double total = 0;
-        for (int i = 0; i < produits.size(); i++) {
+        for (int i= 0; i < produits.size(); i++) {
             total += produits.get(i).getPrix();
         }
         return total;
     }
-/// utilisation de get//
+/// utilisation de get///
     public int getNumeroTable() {
         return numeroTable;
     }

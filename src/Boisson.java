@@ -2,8 +2,8 @@ public class Boisson extends Produit {
 
     private String volume;
     /// constructeur///
-    public Boisson(String nom, int prix, String description, String volume) {
-        super(nom, prix, description);
+    public Boisson(String nom, int prix, String volume) {
+        super(nom, prix,"");
         this.volume = volume;
     }
 /// affichier_details///

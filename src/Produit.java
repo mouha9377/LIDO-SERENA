@@ -7,13 +7,13 @@ public class Produit {
     protected String Décription;
 
     public Produit(String nom, int prix, String décription) {
-     /// constructeur///
+     // constructeur///
         this.Nom = nom;
         this.Prix = prix;
         this.Décription = décription;
     }
 
-    public Produit(int nbPersonnes, int nbPersonnes1) {
+    public Produit(String nbPersonnes, int nbPersonnes1) {
     }
 /// affichier_details///
     public void affichier_details() {

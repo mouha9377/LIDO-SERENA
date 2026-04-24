@@ -2,8 +2,8 @@ public class Desert extends Produit {
 
     private int calories;
     /// constructeur///
-    public Desert(String nom, int prix, String description, int calories) {
-        super(nom, prix, description);
+    public Desert(String nom, int prix,  int calories) {
+        super(nom, prix,"");
         this.calories = calories;
     }
 /// afichier_detail///

@@ -1,7 +1,7 @@
 public class Plat extends Produit {
 
     private String type;
-    /// constructeur///
+    /// constructeur////
     public Plat(String nom, int prix, String type) {
         super(nom, prix, type);
         this.type = type;
